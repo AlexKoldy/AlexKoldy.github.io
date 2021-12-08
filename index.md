@@ -1,6 +1,11 @@
 # Alexander Koldy's Portfolio
 
-|[Soft Robotics](#dexterous-manipulation-with-soft-robotic-end-effectors)|[Actuated Ball Joint](#actuated-ball-joint)|[Humanoid Control](#humanoid-control)|[Gearbox Design](#u12-gearbox-design)|[Autonomous Golf Cart](#intelligent-ground-vehicles-competition)|[ViT Probing](#visual-transformer-probing)|[Aircraft Controls](#aircraft-simulators)|[Self-Balancing Cube](#self-balancing-cube)|[Maze Robot](#maze-solving-robot)|[Robot Tank](#mobile-robot)|
+## Hello, welcome to my portfolio!
+
+My name is **Alexander Koldy** and I am a senior mechanical engineering and computer science student at The Cooper Union for the Advancement of Science and art. I am an **aspiring roboticist** with a strong interest in **mechanical design** and **controls**. Below, you will find some of my most recent robotics-related projects. If you are interested in learning more about my work, please send an email to koldy@cooper.edu (resume available upon request)!
+
+
+|[Soft Robotics](#dexterous-manipulation-with-soft-robotic-end-effectors)|[Actuated Ball Joint](#actuated-ball-joint)|[Humanoid Control](#humanoid-control)|[Gearbox Design](#u12-gearbox-mechanical-design)|[Autonomous Golf Cart](#intelligent-ground-vehicles-competition)|[ViT Probing](#visual-transformer-probing)|[Aircraft Controls](#aircraft-controls-simulations)|[Self-Balancing Cube](#self-balancing-cube)|[Maze Robot](#maze-solving-robot)|[Robot Tank](#mobile-robot)|
 
 ## Dexterous Manipulation with Soft-Robotic End-Effectors
 
@@ -14,7 +19,7 @@
 
 ## Visual Transformer Probing
 
-## Aircraft Controsl Simulations
+## Aircraft Controls Simulations
 
 ## Self-Balancing Cube
 
