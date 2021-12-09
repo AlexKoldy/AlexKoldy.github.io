@@ -69,6 +69,11 @@ In addition, I am working to understand the work of Masahiko Yamaguchi ([DrGuero
   <img width=400 height=400 src="https://raw.githubusercontent.com/AlexKoldy/AlexKoldy.github.io/main/img/u12_inside.PNG"/>
 </p>
 
+### Skills used:
+- SolidWorks
+
+### Details:
+In this project, I designed a modified U12 motor with a 6:1 gear reduction. This would allow for the motor to be used in a humanoid leg. The biggest challenge with this project was ensuring that the sun gear and planetary gear carrier were able to spin freely on the same axis, without compromising the support of the shaft. To do this, I placed an internal bearing on the inside of the planetary carrier and extended the main rotor shaft (sun gear shaft). This constrained the axis of rotation and helped support the rotor shaft at its farthest end. Moreover, this allowed the two shafts to spin at different speeds despite being on this same axis of rotation. Another bearing was placed inside a stator-adapter to constrain the other end of the main rotor shaft. The planetary carrier also had an outer, larger bearing that interfaced with the motors external casing (not pictured; designed by a peer), which helps keep the whole system together.
 
 
 
