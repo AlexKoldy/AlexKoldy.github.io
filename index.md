@@ -45,6 +45,10 @@ As the project began to develop, I started to work as more of an advisor. I ensu
 I am also assisting in the development of the the controls system for the physical prototype. Together with a peer, I developed a mathematical python simulation to verify the forward and inverse kinematics of both the original published design and our new design. Over the break, I will be working on admittance control, as the group has decided to focus on mouth-swabbing application of the mechanism before applying it to humanoids.
 
 ## Humanoid Control
+<p float="center">
+  <img width=400 height=400 src="https://raw.githubusercontent.com/AlexKoldy/AlexKoldy.github.io/main/img/robot.PNG"/>
+  <img width=400 height=400 src="https://raw.githubusercontent.com/AlexKoldy/AlexKoldy.github.io/main/img/Robot2.PNG"/>
+</p>
 ### Skills used:
 - Python
 - PyBullet
@@ -58,6 +62,14 @@ In addition, I am working to understand the work of Masahiko Yamaguchi ([DrGuero
 
 
 ## U12 Gearbox Mechanical Design
+
+<p float="center">
+  <img width=400 height=400 src="https://raw.githubusercontent.com/AlexKoldy/AlexKoldy.github.io/main/img/u12.PNG"/>
+  <img width=400 height=400 src="https://raw.githubusercontent.com/AlexKoldy/AlexKoldy.github.io/main/img/u12_inside.PNG"/>
+</p>
+
+
+
 
 ## Intelligent Ground Vehicles Competition
 
