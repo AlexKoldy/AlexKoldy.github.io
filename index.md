@@ -76,10 +76,50 @@ In addition, I am working to understand the work of Masahiko Yamaguchi ([DrGuero
 In this project, I designed a modified U12 motor with a 6:1 gear reduction. This would allow for the motor to be used in a humanoid leg. The biggest challenge with this project was ensuring that the sun gear and planetary gear carrier were able to spin freely on the same axis, without compromising the support of the shaft. To do this, I placed an internal bearing on the inside of the planetary carrier and extended the main rotor shaft (sun gear shaft). This constrained the axis of rotation and helped support the rotor shaft at its farthest end. Moreover, this allowed the two shafts to spin at different speeds despite being on this same axis of rotation. Another bearing was placed inside a stator-adapter to constrain the other end of the main rotor shaft. The planetary carrier also had an outer, larger bearing that interfaced with the motors external casing (not pictured; designed by a peer), which helps keep the whole system together.
 
 
-
 ## Intelligent Ground Vehicles Competition
+<div align="center">
+  <img weight=600 height=600 src="https://raw.githubusercontent.com/AlexKoldy/AlexKoldy.github.io/main/img/Car.png"/>
+</div>
+
+### Skills used:
+- SolidWorks
+- Arduino
+
+### Details:
+At The Cooper Union, I am part of the Intelligent Ground Vehicles Competition Team where I am the Mechanical Engineering Lead and also a Controls Engineer. For this competition, the goal is to modify a golf cart-like vehicle to navigate autonomously. Most of my engineering work focuses on low-level control (brakes, steering, throttle) and mechanical enhancements. Below, I detail some of the components I've worked on.
+
+**Designing a Multi-input, single-output brake system**
+<div align="center">
+  <img weight=600 height=600 src="https://raw.githubusercontent.com/AlexKoldy/AlexKoldy.github.io/main/img/Brakes.png"/>
+</div>
+
+As my first project, I had to redesign the commerical brake system that came with the car. The car needed to have an adequate pressure feedback system, and also had to be actuated electronically. I opted to use a hydraulic trailer brake actuator (HydraStar) as a means of actuating the brakes electronically; a PWM signal can easily be sent to this actuator in order push fluid through the system. I scrapped all of the brake lines attached to the front disk brakes. Typically, most of the brake force happens in the front of a vehicle, so I wanted to ensure both mechanical (pushing the pedal) and electronic (hydraulic actuator) actuation could be achieved on the front disk brakes. I did this by using a hydraulic shuttle valve, which allows for pressure differentials to control which output is being used. A small ball covers the output of the shuttle valve until a high pressure is felt:
+- If the brake pedal is pressed and the hydraulic actuator is not powered, the pressure from the master cylinder will cause the ball to cover the actuator line, so fluid will flow from the master cylinder to the disk brakes
+- If the actuator is sent a PWM signal and the brake pedal is unpressed, the pressure from the actuator will cause the ball to cover the master cylinder line, so fluid will flow from the actuator to the disk brakes
+
+Entire system is connected as follows:
+- The master cylinder is connected to input 1 of the shuttle valve
+- The hydraulic actuator is connected to input 2 of the shuttle valve
+- A custom tee fitting is connected to the output of the shuttle valve. This tee fitting was manufactured in the machine shop, as it must interface with connections of 3 different sizes and types of flares
+- The second end of the tee fitting is connected to the pressure sensor for feedback control
+- The final end of the tee is connected to the front disk brakes via a double banjo connection. Copper crush washers and gasket rings are used to ensure no leaks spring out in the system
+
+**Modifying the Electric Power Assisted Steering**
+<div align="center">
+  <img weight=600 height=600 src="https://raw.githubusercontent.com/AlexKoldy/AlexKoldy.github.io/main/img/EPAS.png"/>
+</div>
+
+For the purposes of actuating the steering column, the electric power assisted steering module was removed and modified. I designed an absolute encoder mount which fits directly inside the module, as this was the simplest way of obtaining position feedback for steering the car. All measurements had to be estimated and I made use of rapid prototyping to perfect the designs. The main mount was drafted to match the draft angles of the casted metal whcih made up the EPAS body. I also designed a shaft adapter to adapt the main shaft to the inner diameter of the absolute encoder. An O-Drive also replaces the original control board from the car. With the O-Drive, a cascaded PID loop is run, where angular velocity is the inner loop and steering angle is the outer loop.
+
+**Designing an Encoder System**
+<div align="center">
+  <img weight=600 height=600 src="https://raw.githubusercontent.com/AlexKoldy/AlexKoldy.github.io/main/img/Encoders.png"/>
+</div>
+
+In order to properly mount encoders on the wheels, I had to make use of the geometrically complex lower control arm. Using a caliper, I estimated the distance of multiple points on the lower control arm to a set point. I think used these points to generate curvatures (in multiple dimensions) in SolidWorks. After modelling a large portion of the lower control arm, I designed an encoder mount that clamps around it. The end result is a robust encoder system that does not slip; this system gives more than adequate position feedback with 1024ppr.
 
 ## Visual Transformer Probing
+
 
 ## Aircraft Controls Simulations
 
