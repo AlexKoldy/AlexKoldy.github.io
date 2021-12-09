@@ -24,10 +24,33 @@ For my senior project, I originally wanted to develop a robot that could cook va
 
 So far, I have been involved with the mechanical design of soft robotic fingers. Together with my group, I design fingers and their molds in SolidWorks. I then 3D print the molds on my printer. In the Robotics Laboratory at The Cooper Union, we pour silicone into the molds and let it cure. This allows us to turn around different designs within about a day (with curing the silicone taking anywhere from 4 to 12 hours). Next semester, I will be working on developing more advanced finger designs, likely containing multiple pressure channels for added degrees-of-freedom (DoF). I will additonally be looking to add DoF by using small servos, which do not make any contact with the work enviornment or objects within it.
 
+In terms of software, an Arduino Mega 2560 will be used to handle pressure control and acquire pressure data. Additionally, a Python script to extract curvature based off of video frames is being developed so that pressure vs curvature graphs can be generated. 
+
 
 ## Actuated Ball Joint
+### Skills used:
+- Solidworks
+- Python
+
+### Details:
+Earlier this year, an active ball joint mechanism was published (https://ieeexplore.ieee.org/document/9415699). To my peers at New York University (NYU), I proposed that this mechanism could potentially be used for 3DoF joints in humanoid robots. Thus, our group began to work on improving this mechanism and making it more compact. At the beginning, I spent a lot of time in SolidWorks optimizing the published mechanical design. I helped develop a more space-efficient 2DoF actuation mechanism, which we call the differential module, to control the main ball joint, a cross-spherical gear (CS gear). This new design works with individually actuated larger bevel gears connected by a smaller bevel gear in between. The smaller gear is on the same shaft as the monopole gear (MP gear), the gear which drives the CS gear, and therefore the end-effector. The mechanism works as follows:
+- If both larger bevel gears spin at the same speed and in the same direction, the MP Gear will rotate about the same axis as these bevel gears
+- If both larger bevel gears spin at the same speed, but in the opposite direction, the MP Gear will rotate about its own axis
+- Spinning the larger bevel gears at different speeds will allow for a combination of the two effects described above
+
+I also developed the SolidWorks macro that generates the MP gear based off of geometry of the CS gear (which can easily be generated with a few revolutes and revolve-cuts). The macro itself represents a hobbing process that utilizes the _Move/Copy_ and _Combine_ (Boolean Subtraction) features in SolidWorks.
+
+As the project began to develop, I started to work as more of an advisor. I ensured all design changes were feasible for manufacturing (FDM and SLA printing) and that the mechanism would properly work. I also assisted with both the final design, where I found ideal motor placements to compact the design further, and the prototype design, which is currently being physically constructed by my peers at NYU.
+
+I am also assisting in the development of the the controls system for the physical prototype. Together with a peer, I developed a mathematical python simulation to verify the forward and inverse kinematics of both the original published design and our new design. Over the break, I will be working on admittance control, as the group has decided to focus on mouth-swabbing application of the mechanism before applying it to humanoids.
 
 ## Humanoid Control
+### Skills used:
+- Python
+- PyBullet
+- C++
+
+
 
 ## U12 Gearbox Mechanical Design
 
