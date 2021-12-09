@@ -119,9 +119,20 @@ For the purposes of actuating the steering column, the electric power assisted s
 In order to properly mount encoders on the wheels, I had to make use of the geometrically complex lower control arm. Using a caliper, I estimated the distance of multiple points on the lower control arm to a set point. I think used these points to generate curvatures (in multiple dimensions) in SolidWorks. After modelling a large portion of the lower control arm, I designed an encoder mount that clamps around it. The end result is a robust encoder system that does not slip; this system gives more than adequate position feedback with 1024ppr.
 
 ## Visual Transformer Probing
+<div align="center">
+  <img weight=1000 height=1000 src="https://raw.githubusercontent.com/AlexKoldy/AlexKoldy.github.io/main/img/vit probes.png"/>
+</div>
+
+### Skills used:
+- Python
+- Tensorflow
+
+### Details:
+In this project, a peer and I wanted to explore what parts of a visual transformer are most useful to classification. The visual transformer made was used to classify CIFAR-10 images and achieved approximately 50% - 60% accuracy. This was because we lacked the training resources to develop a better and deeper network. We also did not augment the data significantly and did not optimize our hyperparamters. Regardless of accuracy, we were able to get insight into how important each layer was to classification. I wrote a linear probing algorithm to take outputs at each layer of the ViT and attempt to classify the image. From our results, we saw that patching and preprocessing significantly affected the accuracy, but the encoders (transformers) themselves did not. We also ran tests using a convolutional layer placed directly before the patching and preprocessing layer. We noticed that while it increased accuracy, there is almost no point to using a convolutional layer beforehand as patching and preproccesing has a similar affect. We posit that patching is the most important part of a ViT; in other words, using patching with other neural networks may prove to be signifcantly beneficial.
 
 
 ## Aircraft Controls Simulations
+
 
 ## Self-Balancing Cube
 
