@@ -22,7 +22,7 @@ My name is **Alexander Koldy** and I am a senior mechanical engineering and comp
 ### Details
 For my senior project, I originally wanted to develop a robot that could cook various meals. After analyzing the most important aspects of human cooking, I determined that  hands were most important to the many of the motions we as humans perform during the cooking process. This led me to explore dexterous manipulation in robotic end-effectors as a potential project. However, I realized that traditional (hard) robots, aren't exactly ideal for the kitchen settings: the kitchen has objects and liquids that can potentially damage traditional robotic systems if they aren't properly protected. Moreover, I realized that traditional robots need percise force-feedback in order to adequately move and manipulate easy-to-break objects such as eggs. This led me to explore soft robotics as a potential solution. Thus, my senior project, **Dexterous Manipulation with Soft-Robotic End-Effectors** was born.
 
-So far, I have been involved with the mechanical design of soft robotic fingers. Together with my group, I design fingers and their molds in SolidWorks. I then 3D print the molds on my printer. In the Robotics Laboratory at The Cooper Union, we pour silicone into the molds and let it cure. This allows us to turn around different designs within about a day (with curing the silicone taking anywhere from 4 to 12 hours). Next semester, I will be working on developing more advanced finger designs, likely containing multiple pressure channels for added degrees-of-freedom (DoF). I will additonally be looking to add DoF by using small servos, which do not make any contact with the work enviornment or objects within it.
+So far, I have been involved with the mechanical design of soft robotic fingers. Together with my group, I design fingers and their molds in SolidWorks. I then 3D print the molds on my printer. In the Robotics Laboratory at The Cooper Union, we pour silicone into the molds and let it cure. This allows us to turn around different designs within about a day (with curing the silicone taking anywhere from 4 to 12 hours). Next semester, I will be working on developing more advanced finger designs, likely containing multiple pressure channels for added degrees-of-freedom (DoF). I will additonally be looking to add DoF by using small servos, which do not make any contact with the work environment or objects within it.
 
 In terms of software, an Arduino Mega 2560 will be used to handle pressure control and acquire pressure data. Additionally, a Python script to extract curvature based off of video frames is being developed so that pressure vs curvature graphs can be generated. 
 
@@ -49,7 +49,12 @@ I am also assisting in the development of the the controls system for the physic
 - Python
 - PyBullet
 - C++
+- Linux
 
+### Details:
+At NYU, I have also developed software used to control humanoid robots. A lot of my work is heavy in linear algebra (NumPy and Eigen), and I make use of the rigid-body dynamics library Pinocchio (in both Python and C++). I have worked on LQR control for stable Zero Moment point (ZMP)-based walking stability, and have done work in [firm] realtime control. Most recently, I assisted in the humanoid throw project, where I also worked on establishing a realtime environment (RT-preempt Linux kernel) our robot's main computer. More information about the project and our paper can be found [here](https://nyu-legged-group.github.io/throw).
+
+In addition, I am working to understand the work of Masahiko Yamaguchi ([DrGuero2001](https://www.youtube.com/channel/UC-ujS0hAM5-RNMRyI4HUZmA) on YouTube), and apply it to our humanoid. Most specifically, I am working with a peer to dissect his upper body vertical control (UVC) software in order to experiment with a similar concept on our robot. So far, I have translated much of his code to Python in order to use PyBullet as a physics engine. I actualled reached out to him and some of my questions can be found on [his website](http://ai2001.ifdef.jp/). I hope to make significant progress after the completion of the Fall 2021 semester.
 
 
 ## U12 Gearbox Mechanical Design
