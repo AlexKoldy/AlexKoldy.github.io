@@ -222,6 +222,20 @@ For my Modern Control class, I designed a virtual simulation based on the Cubli 
 ### Skills used:
 - Arduino
 
+## Thank you
+All of these projects could not have been possible without the mentorship/help from the following individuals. 
+- Dr. Vikram Kapila
+- Dr. Dirk Martin Luchtenburg
+- Dr. Michelle Rosen
+- Michael Giglia
+- Dongdong Liu
+- Yuhang Lin
+- Samuel Rossberg
+- William Lin
+- Anthony Chen
+- Solbi Oh
+- Bhavik Mukesh Panchal
+
 
 
 
