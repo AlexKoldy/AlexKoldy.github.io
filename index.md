@@ -11,6 +11,12 @@ My name is **Alexander Koldy** and I am a senior mechanical engineering and comp
 ### Skills used:
 - Python
 
+### Concepts used/learned:
+- Optimization (CasADi)
+- Optimal control
+- Local server-client networks
+- GUI Design
+
 ### Details
 As an independent study during my final semester at The Cooper Union, I am working towards creating a virtual robot which will play the game Rocket League using optimization for trajectory generation and control. Currently, my software integrates an existing bot software called RLBot; this allows me to get the percise state of the robot and other game elements (such as the ball), so no estimation is required. I have a 13-degree-of-freedom model set up to predict the future state of the bot (Rocket League car), and have verified the results are comparable to the ground truth. The state of the car consists of its position (in the world frame), its velocity (in the world frame), its orientation (represented as a quaternion), and its angular velocity (in the bot's body frame). I will be using the CasADi optimization library in order to produce optimal trajectories between the car's current state and the large ball somewhere in 3D-space within the game field. In order to communicate with the game to set conditions, I use a server-client network: the client is tied to a GUI which can set various aspects of the game state (e.g., the bot's state) and a messasge is sent to the server, which is tied to the game. This project is ongoing, stay tuned!
 
@@ -27,6 +33,13 @@ As an independent study during my final semester at The Cooper Union, I am worki
 - Arduino
 - Python
 
+### Concepts used/learned:
+- Soft robotic manufacturing and actuation
+- Injection molding
+- Rapid prototyping 
+- Computer vision (OpenCV)
+- Bang-bang pressure control
+
 ### Details
 For my senior project, I originally wanted to develop a robot that could cook various meals. After analyzing the most important aspects of human cooking, I determined that  hands were most important to the many of the motions we as humans perform during the cooking process. This led me to explore dexterous manipulation in robotic end-effectors as a potential project. However, I realized that traditional (hard) robots, aren't exactly ideal for the kitchen settings: the kitchen has objects and liquids that can potentially damage traditional robotic systems if they aren't properly protected. Moreover, I realized that traditional robots need percise force-feedback in order to adequately move and manipulate easy-to-break objects such as eggs. This led me to explore soft robotics as a potential solution. Thus, my senior project, **Dexterous Manipulation with Soft-Robotic End-Effectors** was born.
 
@@ -41,8 +54,14 @@ In terms of software, an Arduino Mega 2560 will be used to handle pressure contr
 </p>
 
 ### Skills used:
-- Solidworks
+- SolidWorks
 - Python
+
+### Concepts used/learned:
+- Design macros (SolidWorks macros)
+- Inverse/Forward kinematics
+- Classifical feedback control (PID)
+- Admittance control
 
 ### Details:
 Earlier this year, an active ball joint mechanism was published (https://ieeexplore.ieee.org/document/9415699). To my peers at New York University (NYU), I proposed that this mechanism could potentially be used for 3DoF joints in humanoid robots. Thus, our group began to work on improving this mechanism and making it more compact. At the beginning, I spent a lot of time in SolidWorks optimizing the published mechanical design. I helped develop a more space-efficient 2DoF actuation mechanism, which we call the differential module, to control the main ball joint, a cross-spherical gear (CS gear). This new design works with individually actuated larger bevel gears connected by a smaller bevel gear in between. The smaller gear is on the same shaft as the monopole gear (MP gear), the gear which drives the CS gear, and therefore the end-effector. The mechanism works as follows:
@@ -68,6 +87,15 @@ I am also assisting in the development of the the controls system for the physic
 - C++
 - Linux
 
+
+### Concepts used/learned:
+- Physics engines (PyBullet)
+- Rigid body dynamics (Pinocchio)
+- Optimal control (Crocoddyl)
+- Advanced feedback control (LQR)
+- Classical feedback control (PID)
+- Linux realtime development
+
 ### Details:
 At NYU, I have also developed software used to control humanoid robots. A lot of my work is heavy in linear algebra (NumPy and Eigen), and I make use of the rigid-body dynamics library Pinocchio (in both Python and C++). I have worked on LQR control for stable Zero Moment point (ZMP)-based walking stability, and have done work in [firm] realtime control. Most recently, I assisted in the humanoid throw project, where I also worked on establishing a realtime environment (RT-preempt Linux kernel) our robot's main computer. More information about the project and our paper can be found [here](https://nyu-legged-group.github.io/throw).
 
@@ -84,6 +112,9 @@ In addition, I am working to understand the work of Masahiko Yamaguchi ([DrGuero
 ### Skills used:
 - SolidWorks
 
+### Concepts used/learned:
+- Compact mechanical design
+
 ### Details:
 In this project, I designed a modified U12 motor with a 6:1 gear reduction. This would allow for the motor to be used in a humanoid leg. The biggest challenge with this project was ensuring that the sun gear and planetary gear carrier were able to spin freely on the same axis, without compromising the support of the shaft. To do this, I placed an internal bearing on the inside of the planetary carrier and extended the main rotor shaft (sun gear shaft). This constrained the axis of rotation and helped support the rotor shaft at its farthest end. Moreover, this allowed the two shafts to spin at different speeds despite being on this same axis of rotation. Another bearing was placed inside a stator-adapter to constrain the other end of the main rotor shaft. The planetary carrier also had an outer, larger bearing that interfaced with the motors external casing (not pictured; designed by a peer), which helps keep the whole system together.
 
@@ -96,6 +127,11 @@ In this project, I designed a modified U12 motor with a 6:1 gear reduction. This
 ### Skills used:
 - SolidWorks
 - Arduino
+
+### Concepts used/learned:
+- Surface modelling (SolidWorks)
+- Automotive design
+- Classical feedback control (PID)
 
 ### Details:
 At The Cooper Union, I am part of the Intelligent Ground Vehicles Competition Team where I am the Mechanical Engineering Lead and also a Controls Engineer. For this competition, the goal is to modify a golf cart-like vehicle to navigate autonomously. Most of my engineering work focuses on low-level control (brakes, steering, throttle) and mechanical enhancements. Below, I detail some of the components I've worked on.
@@ -139,18 +175,58 @@ In order to properly mount encoders on the wheels, I had to make use of the geom
 - Python
 - Tensorflow
 
+### Concepts used/learned:
+- Transformers (ViTs)
+- Probing neural networks
+
 ### Details:
 In this project, a peer and I wanted to explore what parts of a visual transformer are most useful to classification. The visual transformer made was used to classify CIFAR-10 images and achieved approximately 50% - 60% accuracy. This was because we lacked the training resources to develop a better and deeper network. We also did not augment the data significantly and did not optimize our hyperparamters. Regardless of accuracy, we were able to get insight into how important each layer was to classification. I wrote a linear probing algorithm to take outputs at each layer of the ViT and attempt to classify the image. From our results, we saw that patching and preprocessing significantly affected the accuracy, but the encoders (transformers) themselves did not. We also ran tests using a convolutional layer placed directly before the patching and preprocessing layer. We noticed that while it increased accuracy, there is almost no point to using a convolutional layer beforehand as patching and preproccesing has a similar affect. We posit that patching is the most important part of a ViT; in other words, using patching with other neural networks may prove to be signifcantly beneficial.
 
 
 ## Aircraft Controls Simulations
+<div align="center">
+  <img weight=1000 height=1000 src="https://raw.githubusercontent.com/AlexKoldy/AlexKoldy.github.io/main/img/drone.png"/>
+</div>
 
+### Skills used:
+- Python
+- MATLAB
+- Ardunio
+
+### Concepts used/learned:
+- Classical feedback control (PID)
+- Bode, root locus, pole plots (MATLAB)
+
+### Details:
+For my Drone Control class, I built an aircraft simulator as part of a final project. I designed and tuned cascaded PID controllers in order to control the simulated plane's heading, altitude and airspeed. The simulation also took aerodynamics and variable enviornmental conditions into account, and test cases for multiple simulations were programmed. The controllers used within the simulation were also verified on a test rig designed and built by the team.
 
 ## Self-Balancing Cube
+### Skills used:
+- Python
+- SolidWorks
+
+### Concepts used/learned:
+- PyBullet
+- URDF
+- Advanced control (LQR)
+- Kalman filtering (LQE)
+
+### Details:
+For my Modern Control class, I designed a virtual simulation based on the Cubli projects at ETH Zurich. I verified all dynamics in 2D-space first, with a two-dimensional simulation, using matplotlib animations. I then moved over to PyBullet, creating a URDF file for a three-dimensional Cubli, based off of a simple STL I designed in SolidWorks. The robot is able to balance on its edges within simulation using linear-quadratic-gaussian (LQG). First, a Kalman Filter (LQE) was built based off of the Cubli's linearized dynamics. The estimated state is then fed into an LQR controller which is tuned to keep the system balanced (i.e., the system is linearized about the desired balancing points). 
 
 ## Maze-Solving Robot
+<div align="center">
+  <img weight=1000 height=1000 src="https://raw.githubusercontent.com/AlexKoldy/AlexKoldy.github.io/main/img/maze_bot.png"/>
+</div>
 
-## Mobile Robot
+### Skills used:
+- Arduino
+
+
+
+
+
+
 
 
 
