@@ -28,6 +28,10 @@ In terms of software, an Arduino Mega 2560 will be used to handle pressure contr
 
 
 ## Actuated Ball Joint
+<p float="center" align="center">
+  <img width=1300 height=600 src="https://raw.githubusercontent.com/AlexKoldy/AlexKoldy.github.io/main/img/3DoF_Gear.PNG"/>
+</p>
+
 ### Skills used:
 - Solidworks
 - Python
