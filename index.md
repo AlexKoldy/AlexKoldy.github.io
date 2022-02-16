@@ -223,10 +223,11 @@ For my Modern Control class, I designed a virtual simulation based on the Cubli 
 - Arduino
 
 ## Thank you
-All of these projects could not have been possible without the mentorship/help from the following individuals. 
+None of these projects could not have been possible without the mentorship/help from the following individuals. 
 - Dr. Vikram Kapila
 - Dr. Dirk Martin Luchtenburg
 - Dr. Michelle Rosen
+- Dr. Eric Lima
 - Michael Giglia
 - Dongdong Liu
 - Yuhang Lin
