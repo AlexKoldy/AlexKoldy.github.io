@@ -5,7 +5,7 @@
 My name is **Alexander Koldy** and I am a senior mechanical engineering and computer science student at The Cooper Union for the Advancement of Science and Art. I am an **aspiring roboticist** with a strong interest in **mechanical design** and **controls**. Below, you will find some of my most recent robotics-related projects. If you are interested in learning more about my work, please send an email to koldy@cooper.edu (resume available upon request)!
 
 
-|[Optimal Control in Rocket League](#optimal-control-and-trajectory-generation-in-rocket-league)|[Soft Robotics](#dexterous-manipulation-with-soft-robotic-end-effectors)|[Actuated Ball Joint](#actuated-ball-joint)|[Humanoid Control](#humanoid-control)|[Gearbox Design](#u12-gearbox-mechanical-design)|[Autonomous Golf Cart](#intelligent-ground-vehicles-competition)|[ViT Probing](#visual-transformer-probing)|[Aircraft Controls](#aircraft-controls-simulations)|[Self-Balancing Cube](#self-balancing-cube)|[Maze Robot](#maze-solving-robot)|[Robot Tank](#mobile-robot)|
+|[Optimal Control in Rocket League](#optimal-control-and-trajectory-generation-in-rocket-league)|[Soft Robotics](#dexterous-manipulation-with-soft-robotic-end-effectors)|[Actuated Ball Joint](#actuated-ball-joint)|[Humanoid Control](#humanoid-control)|[Gearbox Design](#u12-gearbox-mechanical-design)|[Autonomous Golf Cart](#intelligent-ground-vehicles-competition)|[ViT Probing](#visual-transformer-probing)|[Aircraft Controls](#aircraft-controls-simulations)|[Self-Balancing Cube](#self-balancing-cube)|[Maze Robot](#maze-solving-robot)|
 
 ## Optimal Control and Trajectory Generation in Rocket League
 ### Skills used:
