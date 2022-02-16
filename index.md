@@ -5,7 +5,15 @@
 My name is **Alexander Koldy** and I am a senior mechanical engineering and computer science student at The Cooper Union for the Advancement of Science and Art. I am an **aspiring roboticist** with a strong interest in **mechanical design** and **controls**. Below, you will find some of my most recent robotics-related projects. If you are interested in learning more about my work, please send an email to koldy@cooper.edu (resume available upon request)!
 
 
-|[Soft Robotics](#dexterous-manipulation-with-soft-robotic-end-effectors)|[Actuated Ball Joint](#actuated-ball-joint)|[Humanoid Control](#humanoid-control)|[Gearbox Design](#u12-gearbox-mechanical-design)|[Autonomous Golf Cart](#intelligent-ground-vehicles-competition)|[ViT Probing](#visual-transformer-probing)|[Aircraft Controls](#aircraft-controls-simulations)|[Self-Balancing Cube](#self-balancing-cube)|[Maze Robot](#maze-solving-robot)|[Robot Tank](#mobile-robot)|
+|[Optimal Control in Rocket League](#optimal-control-and-trajectory-generation-in-rocket-league)|[Soft Robotics](#dexterous-manipulation-with-soft-robotic-end-effectors)|[Actuated Ball Joint](#actuated-ball-joint)|[Humanoid Control](#humanoid-control)|[Gearbox Design](#u12-gearbox-mechanical-design)|[Autonomous Golf Cart](#intelligent-ground-vehicles-competition)|[ViT Probing](#visual-transformer-probing)|[Aircraft Controls](#aircraft-controls-simulations)|[Self-Balancing Cube](#self-balancing-cube)|[Maze Robot](#maze-solving-robot)|[Robot Tank](#mobile-robot)|
+
+## Optimal Control and Trajectory Generation in Rocket League
+### Skills used:
+- Python
+
+### Details
+As an independent study during my final semester at The Cooper Union, I am working towards creating a virtual robot which will play the game Rocket League using optimization for trajectory generation and control. Currently, my software integrates an existing bot software called RLBot; this allows me to get the percise state of the robot and other game elements (such as the ball), so no estimation is required. I have a 13-degree-of-freedom model set up to predict the future state of the bot (Rocket League car), and have verified the results are comparable to the ground truth. The state of the car consists of its position (in the world frame), its velocity (in the world frame), its orientation (represented as a quaternion), and its angular velocity (in the bot's body frame). I will be using the CasADi optimization library in order to produce optimal trajectories between the car's current state and the large ball somewhere in 3D-space within the game field. In order to communicate with the game to set conditions, I use a server-client network: the client is tied to a GUI which can set various aspects of the game state (e.g., the bot's state) and a messasge is sent to the server, which is tied to the game. This project is ongoing, stay tuned!
+
 
 ## Dexterous Manipulation with Soft-Robotic End-Effectors
 
@@ -46,7 +54,7 @@ I also developed the SolidWorks macro that generates the MP gear based off of ge
 
 As the project began to develop, I started to work as more of an advisor. I ensured all design changes were feasible for manufacturing (FDM and SLA printing) and that the mechanism would properly work. I also assisted with both the final design, where I found ideal motor placements to compact the design further, and the prototype design, which is currently being physically constructed by my peers at NYU.
 
-I am also assisting in the development of the the controls system for the physical prototype. Together with a peer, I developed a mathematical python simulation to verify the forward and inverse kinematics of both the original published design and our new design. Over the break, I will be working on admittance control, as the group has decided to focus on mouth-swabbing application of the mechanism before applying it to humanoids.
+I am also assisting in the development of the the controls system for the physical prototype. Together with a peer, I developed a mathematical python simulation to verify the forward and inverse kinematics of both the original published design and our new design. Currently, I am working towards an admittance control algorithm, useful for controlling the position (given some external force) of any components attached to the ball joint.
 
 ## Humanoid Control
 <p float="center" align="center">
